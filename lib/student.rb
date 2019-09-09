@@ -52,9 +52,13 @@ class Student
   end
 
   def self.create
-
+      sql = <<-SQL
+      CREATE TABLE IF NOT EXISTS students (
+          name TEXT,
+          grade TEXT
+      )
   end
-  
+
 
 
 
