@@ -38,6 +38,7 @@ class Student
 
       result = DB[:conn].execute(sql, self.name, self.grade)
       self.id = result[0][0]
+  end
 
 
 
