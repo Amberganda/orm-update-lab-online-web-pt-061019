@@ -51,15 +51,10 @@ class Student
       end
   end
 
-  def self.create
-      sql = <<-SQL
-      CREATE TABLE IF NOT EXISTS students (
-          name TEXT,
-          grade TEXT
-      )
-      SQL
-
-      DB[:conn].execute(sql)
+  def self.create(name, grade)
+      student = Student.new
+      student.name = name
+      student.grade = grade
   end
 
 
