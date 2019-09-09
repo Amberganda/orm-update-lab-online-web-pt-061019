@@ -55,6 +55,7 @@ class Student
       student = Student.new
       student.name = name
       student.grade = grade
+      student.save
   end
 
 
